@@ -5,7 +5,7 @@ const queries = require('./queries')
 
 
 app.get('/', (req,res) => {
-    queries.listAll().then(students => res.json(students))
+    queries.listAll().then(students => res.send(students))
 })
 
 app.listen(port, () => {
