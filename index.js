@@ -15,6 +15,15 @@ app.get('/:id', (req,res) => {
     var { id } = req.params
     queries.getById(id).then(guy => res.send(guy))
 })
+app.post('/', (req,res) => {
+    queries.createStudent(req.body).then(students => res.send(students[0]))
+})
+app.delete('/:id', (req,res) => {
+
+    var { id } = req.params
+    console.log(id)
+    queries.deleteStudent(id).then(res.status(204).send("we done"))
+})
 
 app.listen(port, () => {
     console.log(`listening on ${port}`)
