@@ -7,4 +7,4 @@
   npm install  knex pg body-parser cors
 
  ###Deployed site found at:
-#####[g102 Server](https://g102-serv-pro.herokuapp.com/)
+[g102 Server](https://g102-serv-pro.herokuapp.com/)
